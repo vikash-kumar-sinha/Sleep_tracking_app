@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/img"
+    tools:context=".LoginActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#3fff"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <TextView
+            android:id="@+id/loginTitleTextView"
+            android:layout_width="96dp"
+            android:layout_height="93dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/circle"
+            android:fontFamily="@font/charmonman"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:text="Login"
+            android:textColor="#ffffff"
+            android:textSize="25dp" />
+
+        <EditText
+            android:id="@+id/usernameEditText"
+            android:layout_width="250dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/btn"
+            android:hint="Username"
+            android:textSize="15sp"
+            android:paddingLeft="15dp"
+            android:textColorHint="#FFFBF6" />
+
+        <EditText
+            android:id="@+id/passwordEditText"
+            android:layout_width="250dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/btn"
+            android:hint="Password"
+            android:textSize="15sp"
+            android:paddingLeft="15dp"
+            android:inputType="textPassword"
+            android:textColorHint="#FFFBF8" />
+
+        <CheckBox
+            android:id="@+id/keepSignedInCheckBox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:buttonTint="#FFFBF8"
+            android:text="Keep me signed in"
+            android:textColor="#DCFFFBF8" />
+
+        <Button
+            android:id="@+id/signInButton"
+            android:layout_width="170dp"
+            android:layout_height="40dp"
+            android:background="@drawable/btncolor"
+            android:text="Sign in"
+            android:textAllCaps="false"
+            android:textStyle="bold"
+            android:textColor="#DC101010" />
+
+        <View
+            android:id="@+id/underlineView"
+            android:layout_width="fill_parent"
+            android:layout_height="2dp"
+            android:layout_marginTop="10dp"
+            android:textColor="#3fff" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/registerTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Register"
+                android:textColor="#FFFBF6" />
+
+            <TextView
+                android:id="@+id/forgetPasswordTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Forget Password?"
+                android:layout_marginLeft="40dp"
+                android:textColor="#FFFBF6" />
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
